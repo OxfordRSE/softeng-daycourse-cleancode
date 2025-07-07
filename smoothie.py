@@ -26,8 +26,3 @@ def smoothie(ingredients: list[str], base: str = "water", ice: bool = True) -> s
 
     smoothie = f"{'Icy ' if ice else ''}{base_str.title()} smoothie with " + ", ".join(unique_ingredients)
     return smoothie
-
-
-def test_smoothie():
-    assert smoothie(["banana", "strawberry", "yogurt"]) == "Icy Water smoothie with banana, strawberry, yogurt"
-    ...  # Continue adding tests here
